@@ -1,0 +1,5 @@
+{
+    "require": ["./tests/testConfig.js"],
+    "recursive": true,
+    "extension": ["js"]
+  }
