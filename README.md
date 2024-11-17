@@ -1,5 +1,13 @@
 # Student template
 
+
+Install required node packages with npm install
+
+Implement unit tests in .tests/unit/fileName.js
+
+Run tests with npm test
+
+
 ## Purpose of this repository
 
 This is a project template for students participating in Software Testing course
