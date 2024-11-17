@@ -2,6 +2,8 @@ import arrayReduce from './.internal/arrayReduce.js'
 import baseEach from './.internal/baseEach.js'
 import baseReduce from './.internal/baseReduce.js'
 
+//JAAKKO
+
 /**
  * Reduces `collection` to a value which is the accumulated result of running
  * each element in `collection` thru `iteratee`, where each successive

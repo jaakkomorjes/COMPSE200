@@ -1,6 +1,9 @@
 import baseAssignValue from './.internal/baseAssignValue.js'
 import reduce from './reduce.js'
 
+//OLLI
+
+
 /** Used to check objects for own properties. */
 const hasOwnProperty = Object.prototype.hasOwnProperty
 

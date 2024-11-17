@@ -1,5 +1,7 @@
 import createCaseFirst from './.internal/createCaseFirst.js'
 
+//OLLI
+
 /**
  * Converts the first character of `string` to upper case.
  *

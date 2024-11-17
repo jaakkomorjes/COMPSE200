@@ -1,6 +1,9 @@
 import isObject from './isObject.js'
 import isSymbol from './isSymbol.js'
 
+//OLLI
+
+
 /** Used as references for various `Number` constants. */
 const NAN = 0 / 0
 

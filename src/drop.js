@@ -1,6 +1,8 @@
 import slice from './slice.js'
 import toInteger from './toInteger.js'
 
+//JAAKKO
+
 /**
  * Creates a slice of `array` with `n` elements dropped from the beginning.
  *
