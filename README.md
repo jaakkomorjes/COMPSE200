@@ -6,7 +6,8 @@ Install required node packages with npm install
 Implement unit tests in .tests/unit/fileName.js
 
 Run tests with npm test
-
+Coverage report is generated along with tests with the command
+npm run coverage
 
 ## Purpose of this repository
 
