@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "mocha tests/unit --recursive",
-    "testcover": "npx nyc npm test "
+    "coverage": "c8 npm test"
   },
   "author": "",
   "license": "MIT",
@@ -16,8 +16,8 @@
     "software-testing-assignment": "file:"
   },
   "devDependencies": {
+    "c8": "^10.1.2",
     "chai-as-promised": "^8.0.0",
-    "nyc": "^17.1.0",
     "sinon": "^19.0.2",
     "sinon-chai": "^4.0.0"
   }

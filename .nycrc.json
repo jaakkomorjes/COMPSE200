@@ -4,5 +4,7 @@
   "include": ["src/**/*.js"],  
   "exclude": ["test/**/*.js", "src/.internal/*.js"],
   "extension": [".js"],        
-  "cache": false              
+  "cache": false,
+  "useSpawnWrap": true,
+  "instrument": true              
 }
