@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import reduce from '../../src/reduce.js'; // Adjust the path as necessary
+import reduce from '../../src/reduce.js'; 
 
 describe('reduce function', () => {
 
@@ -10,7 +10,7 @@ describe('reduce function', () => {
 
   it('should handle arrays with an initial value not provided', () => {
     const result = reduce([1, 2, 3, 4], (sum, n) => sum + n);
-    expect(result).to.equal(10); // Starts with the first element as the accumulator
+    expect(result).to.equal(10); 
   });
 
   it('should iterate over an object and return the correct accumulated result', () => {
@@ -23,7 +23,7 @@ describe('reduce function', () => {
 
   it('should handle objects without an initial value provided', () => {
     const result = reduce({ a: 1, b: 2 }, (acc, value) => acc + value);
-    expect(result).to.equal(3); // Starts with the first value as the accumulator
+    expect(result).to.equal(3); 
   });
 
   it('should return the initial value when the collection is empty', () => {

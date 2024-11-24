@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import get from '../../src/get.js'; // Adjust the path as necessary
+import get from '../../src/get.js'; 
 
 describe('get function', () => {
 

@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import difference from '../../src/difference.js'; // Adjust the path as necessary
+import difference from '../../src/difference.js';
 
 describe('difference function', () => {
   it('should return the difference of two arrays', () => {

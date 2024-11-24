@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import drop from '../../src/drop.js'; // Adjust the path as necessary
+import drop from '../../src/drop.js'; 
 
 describe('drop function', () => {
 
