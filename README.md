@@ -1,6 +1,6 @@
-# Student template
+[![Coverage Status](https://coveralls.io/repos/github/jaakkomorjes/COMPSE200/badge.svg?branch=main)](https://coveralls.io/github/jaakkomorjes/COMPSE200?branch=main)
 
-
+# How to 
 Install required node packages with npm install
 
 Implement unit tests in .tests/unit/fileName.js
