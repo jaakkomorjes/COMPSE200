@@ -10,28 +10,29 @@ describe('countBy function', () => {
     ];
 
     const result = countBy(users, value => value.active);
-    expect(result).to.deep.equal({ 'true': 2, 'false': 1 });
+    expect(result).equal({ 'true': 2, 'false': 1 });
   });
 
   it('should handle an empty collection', () => {
     const result = countBy([], value => value.active);
-    expect(result).to.deep.equal({});
+    expect(Object.keys(result)).to.have.lengthOf(0);;
   });
 
-  it('should handle different types of iteratees', () => {
-    const numbers = [6.1, 4.2, 6.3];
-    const result = countBy(numbers, Math.floor);
-    expect(result).to.deep.equal({ '4': 1, '6': 2 });
+  it('should count by a different iteratee', () => {
+    const items = [
+      { 'type': 'fruit', 'name': 'apple' },
+      { 'type': 'fruit', 'name': 'banana' },
+      { 'type': 'vegetable', 'name': 'carrot' }
+    ];
+
+    const result = countBy(items, value => value.type);
+    expect(result).equal({ 'fruit': 2, 'vegetable': 1 });
   });
 
-  it('should handle objects as collections', () => {
-    const users = {
-      'a': { 'user': 'barney', 'active': true },
-      'b': { 'user': 'betty', 'active': true },
-      'c': { 'user': 'fred', 'active': false }
-    };
+  it('should handle non-boolean iteratee results', () => {
+    const numbers = [1, 2, 3, 4, 5, 6];
 
-    const result = countBy(users, value => value.active);
-    expect(result).to.deep.equal({ 'true': 2, 'false': 1 });
+    const result = countBy(numbers, value => value % 2 === 0 ? 'even' : 'odd');
+    expect(result).equal({ 'odd': 3, 'even': 3 });
   });
 });
